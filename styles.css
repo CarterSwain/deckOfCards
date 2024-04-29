@@ -1,0 +1,64 @@
+body {
+    font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+    background-color: rgba(13, 142, 13, 0.8);
+}
+
+header {
+    
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Gravitas One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.participants {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+/* Define the transition for all card elements */
+.card {
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Define keyframes for the shuffle animation */
+@keyframes shuffleAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to cards with the class .shuffling */
+.card.shuffling {
+    animation: shuffleAnimation 2s ease-in-out;
+}
+
+
